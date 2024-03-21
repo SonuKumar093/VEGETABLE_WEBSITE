@@ -6,7 +6,7 @@ const app=express()
 app.use(cors())
 const PORT=process.env.PORT||8081
 app.get("/",(req,res)=>{
-    res.send("server is runnig")
+    res.send("server is runnig");
 })
 app.post("/signup",(req,res)=>{
     console.log(req.body)
